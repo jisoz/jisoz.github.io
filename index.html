@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Assaad | DevOps Engineer Portfolio</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: #f4f6fb;
+        color: #222;
+        scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #002f6c;
+        padding: 15px 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        z-index: 999;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: none;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav ul li a:hover {
+        color: #66b7ff;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 130px 20px 50px;
+        text-align: center;
+    }
+    .hero img {
+        width: 160px;
+        border-radius: 100%;
+        border: 4px solid #004f9e;
+        margin-bottom: 20px;
+    }
+    .hero h1 {
+        font-size: 40px;
+        color: #003f7f;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        font-size: 18px;
+        max-width: 800px;
+        margin: auto;
+        color: #444;
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+        text-align: center;
+        font-size: 32px;
+        color: #004f9e;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+
+    /* PROJECT GRID */
+    .projects-container {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+        gap: 25px;
+    }
+
+    .project-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    .project-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 20px rgba(0,0,0,0.18);
+    }
+    .project-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    .project-card h3 {
+        color: #004f9e;
+        margin-bottom: 10px;
+    }
+    .project-card p {
+        font-size: 15px;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #002f6c;
+        text-align: center;
+        padding: 25px;
+        color: #fff;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Technical Projects</a></li>
+        <li><a href="#skills">DevOps Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <img src="assets/bmm.png" alt="Bluemint Logo">
+    <h1>Assaad — DevOps Engineer @ Bluemint</h1>
+    <p>
+        Specializing in CI/CD automation, Docker, Kubernetes, Terraform, server management, monitoring, 
+        cloud technologies, and DevOps engineering.  
+        This portfolio highlights the technical projects and infrastructure work completed for Bluemint.
+    </p>
+</section>
+
+<!-- PROJECTS SECTION -->
+<h2 id="projects" class="section-title">Technical Projects</h2>
+
+<div class="projects-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+        <img src="assets/cii.jpg" alt="CI/CD">
+        <h3>CI/CD Pipelines for Notary Application</h3>
+        <p>
+            Built and maintained CI/CD pipelines using GitLab integrating Playwright and TypeScript to ensure
+            full end-to-end automated testing, dramatically improving deployment speed and quality.
+        </p>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+        <img src="assets/fastlane.png" alt="Fastlane">
+        <h3>Android Builds Automation</h3>
+        <p>
+            Implemented Dockerized Quasar environment with a full CI/CD pipeline using Fastlane. Automated 
+            Android builds and connected deployments to Google Play Store for seamless delivery.
+        </p>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+        <img src="assets/psql.jpg" alt="PostgreSQL">
+        <h3>PostgreSQL Database Management</h3>
+        <p>
+            Configured replication, pg_cron jobs, backup strategies, and optimized database performance with 
+            a strong focus on high availability and resilience.
+        </p>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card">
+        <img src="assets/kb.png" alt="Kubernetes">
+        <h3>Docker & Kubernetes on GCP</h3>
+        <p>
+            Containerized applications with Docker and deployed them using Kubernetes on Google Cloud 
+            enabling scalable microservices and automated rollouts.
+        </p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card">
+        <img src="assets/sm.png" alt="Server Management">
+        <h3>Server Management & API Development</h3>
+        <p>
+            Automated Windows services with PowerShell/CMD, configured TWAIN Direct scanning API, and
+            maintained stable Linux/Windows environments.
+        </p>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="project-card">
+        <img src="assets/odroid.jpg" alt="Odroid">
+        <h3>Odroid Watchdog & Power Management</h3>
+        <p>
+            Implemented watchdog, system synchronization, and rtcwake scheduling for efficient low-power 
+            performance on Odroid devices.
+        </p>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="project-card">
+        <img src="assets/monit.jpg" alt="Monitoring">
+        <h3>Monitoring with Prometheus & Grafana</h3>
+        <p>
+            Built dashboards for real-time system health, performance alerting, and analytics across multiple 
+            Linux systems.
+        </p>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="project-card">
+        <img src="assets/direvent.png" alt="Direvent">
+        <h3>Automated File Monitoring Workflow</h3>
+        <p>
+            Used GNU Direvent for event-triggered Bash scripts, automating document workflows with 
+            cron-based yearly configurations.
+        </p>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="project-card">
+        <img src="assets/samba.png" alt="Samba">
+        <h3>Samba & Network Drive Automation</h3>
+        <p>
+            Configured Samba for shared network folders and built an offline drive reconnect system using 
+            VBS & batch scripts for Windows.
+        </p>
+    </div>
+
+    <!-- Project 10 -->
+    <div class="project-card">
+        <img src="assets/nomad.png" alt="Nomad">
+        <h3>Nomad Application Deployment</h3>
+        <p>
+            Deployed the Notary application on a Nomad cluster with automated scaling and resource management.
+        </p>
+    </div>
+
+</div>
+
+<!-- SKILLS SECTION -->
+<h2 id="skills" class="section-title">DevOps Skills</h2>
+<p style="text-align:center; font-size:18px;">
+    Docker • Kubernetes • GitLab CI/CD • GitHub Actions • Nomad • Terraform • Ansible •  
+    Prometheus • Grafana • PostgreSQL • Bash • PowerShell • Linux • GCP • Monitoring  
+</p>
+
+<!-- CONTACT SECTION -->
+<h2 id="contact" class="section-title">Contact</h2>
+<p style="text-align:center; font-size:18px;">
+    📧 Email: your@email.com <br>
+    🔗 LinkedIn: linkedin.com/in/yourprofile <br>
+    🌍 GitHub: github.com/yourusername
+</p>
+
+<footer>
+    © 2025 Assaad — DevOps Engineer Portfolio
+</footer>
+
+</body>
+</html>
