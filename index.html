@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Assaad | DevOps Engineer Portfolio</title>
+<title>Jad Issa | DevOps Engineer </title>
 
 <style>
     body {
@@ -135,13 +135,20 @@
 </nav>
 
 <!-- HERO SECTION -->
-<section id="home" class="hero">
-    <img src="assets/bmm.png" alt="Bluemint Logo">
-    <h1>Assaad — DevOps Engineer @ Bluemint</h1>
+<section id="home" class="hero" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 50px 0;">
+    <br>
+    <br>
+    <img src="assets/portfoliojad.jpg" alt="Portfolio" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 15px;">
+    <p style="font-style: italic; color: #555; margin-bottom: 15px;">
+        @Automating Everything Except My Coffee
+    </p>
+    <h1 style="margin: 5px 0; font-size: 2rem;">
+        Jad Issa -- DevOps Engineer --
+    </h1>
     <p>
         Specializing in CI/CD automation, Docker, Kubernetes, Terraform, server management, monitoring, 
-        cloud technologies, and DevOps engineering.  
-        This portfolio highlights the technical projects and infrastructure work completed for Bluemint.
+        cloud Solutions, and DevOps engineering.  
+        This portfolio highlights the technical projects and infrastructure work completed over the years.
     </p>
 </section>
 
@@ -149,16 +156,111 @@
 <h2 id="projects" class="section-title">Technical Projects</h2>
 
 <div class="projects-container">
+ 
+
+  <div class="project-card">
+    <img src="assets/registry.png" />
+    <h3>Private Docker Registry Setup</h3>
+    <p>
+        Implemented a fully private Docker registry on an Ubuntu server, secured with SSL certificates for a custom domain. Configured user authentication using `htpasswd` to require a username and password for accessing the registry, ensuring only authorized users can push or pull images. This setup provides a secure, centralized repository for Docker images, enabling version control, safe storage, and seamless deployment of containerized applications across different environments.
+    </p>
+</div>
+    
+  <div class="project-card">
+    <img src="assets/ARCH.png" width="200px" height="270px"/>
+    <h3>Hybrid Networking Environment</h3>
+    <p>
+        Design a comprehensive hybrid networking environment that securely connects on-premises infrastructure to Azure cloud resources. Utilize Azure's networking services such as VPN Gateway, ExpressRoute, and Network Security Groups to ensure encrypted data transmission, reliable connectivity, and granular access control. The solution enables seamless integration of on-premises applications with cloud services while maintaining security, compliance, and high availability.
+    </p>
+</div>
+
+<div class="project-card">
+        <img src="assets/nginx.png" width="200px" height="270px"/>
+    <h3>NGINX Caching & Web Server Optimization</h3>
+    <p>
+        Implemented a <strong> optimization solution</strong> using NGINX to enhance the performance of the Lexzur / APP-4-LEGAL application. Configured multiple NGINX web servers for a <strong>3-tier architecture</strong>, optimized cache rules, and improved content delivery, resulting in faster response times, reduced server load, smoother user experience, and better scalability under high traffic.
+    </p>
+   </div>
+
+    
+   <div class="project-card">
+    <img src="assets/vpn.png" alt="">
+    <h3>Azure VPN Connection Flow</h3>
+    <p>
+        Designed and documented the end-to-end flow of a <strong>Point-to-Site VPN connection</strong> between client devices and Azure Virtual Network. The process includes:
+        <ul>
+            <li><strong>Client Initiation:</strong> Devices connect to the Azure VPN Gateway using SSTP, OpenVPN, or IKEv2 with certificates or credentials.</li>
+            <li><strong>Authentication:</strong> VPN Gateway authenticates connections via certificates, Azure AD, or user credentials.</li>
+            <li><strong>Secure Tunnel:</strong> A VPN tunnel encrypts all data between client and Azure.</li>
+            <li><strong>IP Assignment:</strong> Clients receive private IPs from a configured address pool, appearing as part of the Azure VNet.</li>
+            <li><strong>Routing:</strong> VPN Gateway routes traffic to the VM subnet, enabling communication within the VNet.</li>
+            <li><strong>Access & Response:</strong> RDP requests from the client traverse the secure tunnel to VMs and responses return securely through the same path.</li>
+        </ul>
+        This setup ensures secure, reliable, and seamless remote access to Azure-hosted virtual machines.
+    </p>
+</div>
+
+
+
+    
+
+   <div class="project-card">
+    <img src="assets/dbm.png" width="200px" height="270px"/>
+    <h3>Database Migration (MSSQL → MySQL)</h3>
+    <p>
+        Executed a full migration of an existing MSSQL database structure to a MySQL environment using DB conversion tools. The process involved mapping data types, preserving schema integrity, and ensuring compatibility with MySQL constraints. This migration enabled seamless transition to a MySQL platform while maintaining data consistency and optimizing database performance for future application use.
+    </p>
+</div>
+
+
+
+     <div class="project-card">
+         <img src="assets/backup.png"  width="200px" height="250px" alt="CI/CD">
+    <h3>BackUp Solution for MSSQL Database</h3>
+    <p>
+        Designed and implemented a  backup strategy for <strong>APP-4-LEGAL</strong> to ensure data integrity and enable point-in-time recovery. The strategy includes:
+        <ul>
+            <li><strong>Full Backup (Sunday):</strong> Complete database backup serving as the baseline.</li>
+            <li><strong>Differential Backups (Monday–Friday):</strong> Captures all changes since the last full backup; only the last full + differential are needed for restoration.</li>
+            <li><strong>Transactional Log Backups (Hourly during business hours):</strong> Records all transactions for precise point-in-time recovery.</li>
+        </ul>
+        This <strong>Full + Differential + Log</strong> approach ensures faster restores, minimal data loss, and smooth recovery for large databases.
+    </p>
+</div>
+
+
+  <!-- Project 1 -->
+    <div class="project-card">
+        <img src="assets/portal.png" alt="CI/CD">
+        <h3>Lexzur Internal Portal</h3>
+      <p>
+        Developed the <strong>Lexzur Internal Portal</strong>, a platform enabling QA/SE team members to deploy and test multiple versions of the application directly on their local machines. Leveraged <strong>Nomad</strong> and <strong>Docker</strong> for automated, isolated deployments, and implemented advanced <strong>Bash</strong> and <strong>PowerShell</strong> scripts for workflow automation. Integrated  CI/CD pipelines for the deployment of the solution, improve QA efficiency,and streamline version validation across multiple environments.
+    </p>
+    </div>
+
+      <div class="project-card">
+        <img src="assets/migration.png" alt="CI/CD">
+        <h3>Lexifly  Migration Agent</h3>
+    <p>
+    Developed the <strong>Lexifly Migration Agent</strong>, a Python-based desktop application that automates the migration of both attachments and data to the Lexzur application. Leveraged <strong>GitHub Actions CI/CD Piplines</strong> to automate builds and packaging of the application, ensuring consistent and reliable releases. This solution significantly improved migration speed, enabled smooth and error-free data transitions, and reduced manual effort, streamlining the onboarding of legacy data into the system.
+</p>
+
+    </div>
+
+  
+
+    
+
+
 
     <!-- Project 1 -->
-    <div class="project-card">
-        <img src="assets/cii.jpg" alt="CI/CD">
-        <h3>CI/CD Pipelines for Notary Application</h3>
-        <p>
-            Built and maintained CI/CD pipelines using GitLab integrating Playwright and TypeScript to ensure
-            full end-to-end automated testing, dramatically improving deployment speed and quality.
-        </p>
-    </div>
+   <div class="project-card">
+    <img src="assets/cii.jpg" alt="CI/CD">
+    <h3>CI/CD Pipelines for Notary Application</h3>
+    <p>
+        Designed and managed robust CI/CD pipelines in GitLab, seamlessly integrating Playwright and TypeScript for comprehensive end-to-end automated testing. This implementation significantly accelerated deployment cycles, enhanced code quality, and ensured reliable, error-free releases, driving operational efficiency and product excellence.
+    </p>
+</div>
 
     <!-- Project 2 -->
     <div class="project-card">
@@ -172,7 +274,7 @@
 
     <!-- Project 3 -->
     <div class="project-card">
-        <img src="assets/psql.jpg" alt="PostgreSQL">
+        <img src="assets/psql.jpg" alt="PostgreSQL" width="200px" height="270px">
         <h3>PostgreSQL Database Management</h3>
         <p>
             Configured replication, pg_cron jobs, backup strategies, and optimized database performance with 
@@ -202,7 +304,7 @@
 
     <!-- Project 6 -->
     <div class="project-card">
-        <img src="assets/odroid.jpg" alt="Odroid">
+        <img src="assets/odroid.jpg" alt="Odroid" width="200px" height="270px">
         <h3>Odroid Watchdog & Power Management</h3>
         <p>
             Implemented watchdog, system synchronization, and rtcwake scheduling for efficient low-power 
@@ -211,14 +313,13 @@
     </div>
 
     <!-- Project 7 -->
-    <div class="project-card">
-        <img src="assets/monit.jpg" alt="Monitoring">
-        <h3>Monitoring with Prometheus & Grafana</h3>
-        <p>
-            Built dashboards for real-time system health, performance alerting, and analytics across multiple 
-            Linux systems.
-        </p>
-    </div>
+   <div class="project-card">
+    <img src="assets/monit.jpg" width="200px" height="270px"/>
+    <h3>Monitoring with Prometheus, Grafana & Loki</h3>
+    <p>
+        Implemented  monitoring solution using Prometheus, Grafana, and Loki. Built real-time dashboards to track system health and performance metrics across multiple Linux systems, set up alerts for critical thresholds, and integrated Loki for centralized log aggregation and analysis. This setup enables both metrics monitoring and log-based troubleshooting, providing full observability and actionable insights for system operations.
+    </p>
+</div>
 
     <!-- Project 8 -->
     <div class="project-card">
@@ -249,25 +350,51 @@
         </p>
     </div>
 
+
+    <div class="project-card">
+        <img src="assets/kl.png" alt="">
+    <h3>GeoInsights: Interactive Country Mapping with ArcGIS</h3>
+    
+    <p>
+        Developed an interactive web application using the <strong>ArcGIS SDK</strong> that enables users to query, explore, and visualize maps of countries worldwide. Built at the request of <strong>Khatib & Alami</strong>, the project provides dynamic map interactions, intuitive visualizations, and seamless geographic data exploration for enhanced decision-making.
+    </p>
+</div>
+
+ <div class="project-card">
+    <img src="assets/recemmend.png" alt="">
+    <h3>Book Recommendation System</h3>
+    <p>
+Discover the power of content-based filtering, utilizing user ratings to enhance your reading experience. By analyzing the relationships between books and their ratings, the system identifies popular titles that align with individual preferences. This approach ensures personalized recommendations, helping readers discover books they'll love, even if they haven't rated them directly    </p>
+</div>
+
+
+<div class="project-card">
+    <img src="assets/attendance.jpg" alt="">
+    <h3>Face Recognition Attendance system</h3>
+    <p>
+I developed an automated attendance system for Lebanese University specifically tailored for tracking professors' attendance. This system uses facial recognition technology to identify and record attendance in real time, providing a seamless, secure, and accurate alternative to manual methods</div>
+
+
+
 </div>
 
 <!-- SKILLS SECTION -->
 <h2 id="skills" class="section-title">DevOps Skills</h2>
 <p style="text-align:center; font-size:18px;">
     Docker • Kubernetes • GitLab CI/CD • GitHub Actions • Nomad • Terraform • Ansible •  
-    Prometheus • Grafana • PostgreSQL • Bash • PowerShell • Linux • GCP • Monitoring  
+    Prometheus • Grafana • PostgreSQL • Python • Bash • PowerShell • Linux • GCP • Monitoring • Azure • AWS • GCP  
 </p>
 
 <!-- CONTACT SECTION -->
 <h2 id="contact" class="section-title">Contact</h2>
-<p style="text-align:center; font-size:18px;">
-    📧 Email: your@email.com <br>
-    🔗 LinkedIn: linkedin.com/in/yourprofile <br>
-    🌍 GitHub: github.com/yourusername
+<p style="text-align:center; font-size:18px; line-height: 1.8;">
+    📧 Email: <a href="mailto:jadtech.issa@outlook.com" target="_blank">jadtech.issa@outlook.com</a><br>
+    🔗 LinkedIn: <a href="https://www.linkedin.com/in/jad-issa234" target="_blank">linkedin.com/in/jad-issa234</a><br>
+    🌍 GitHub: <a href="https://github.com/jisoz" target="_blank">github.com/jisoz</a>
 </p>
 
 <footer>
-    © 2025 Assaad — DevOps Engineer Portfolio
+    © 2025 Jad Issa — DevOps Engineer Portfolio
 </footer>
 
 </body>
